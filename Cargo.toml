@@ -1,0 +1,14 @@
+[package]
+author = "rudolf slusarski"
+edition = "2021"
+name = "informatics"
+readme = "README.md"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bit-vec = "0.6.3"
+bitstream-io = "1.3.0"
+colour = "0.6.0"
+rand = "0.8.4"
