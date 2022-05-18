@@ -11,9 +11,9 @@ pub mod data_structures;
 
 pub fn run(choice: u32) -> Result<(), Error> {
     match choice {
-        2 => quicksort::run(),
-        4 => longest_common_subsequence::run(),
-        5 => huffman_encoding::run(),
+        3 => quicksort::run(),
+        5 => longest_common_subsequence::run(),
+        6 => huffman_encoding::run(),
         _ => Ok(()),
     }
 }
@@ -21,13 +21,14 @@ pub fn run(choice: u32) -> Result<(), Error> {
 pub fn display_menu() {
     println!("algorithms:");
     println!("1 - insertion sort");
-    println!("2 - quicksort");
-    println!("3 - radix sort");
-    println!("4 - longest common subsequence");
-    println!("5 - huffman encoding");
+    println!("2 - huffman");
+    println!("3 - quicksort");
+    println!("4 - radix sort");
+    println!("5 - longest common subsequence");
+    println!("6 - huffman encoding");
 
     println!("data structures:");
-    println!("6 - red-black tree");
+    println!("7 - red-black tree");
 
     println!("0 - that's enough");
 }
