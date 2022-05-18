@@ -2,6 +2,7 @@
 author = "rudolf slusarski"
 categories = ["algorithms", "data-structures"]
 edition = "2021"
+license = "MIT"
 name = "informatics"
 readme = "README.md"
 repository = "https://github.com/rudolf-slusarski/informatics"
