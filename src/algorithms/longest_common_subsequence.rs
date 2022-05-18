@@ -142,6 +142,6 @@ mod tests {
 
     #[test]
     fn nawigator() {
-        assert_eq!(lcs("nawigator", "nowator"), "ngator");
+        assert_eq!(lcs("nawigator", "nowator"), "nwator");
     }
 }

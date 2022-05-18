@@ -1,9 +1,9 @@
 #![deny(clippy::pedantic)]
 #![allow(clippy::missing_panics_doc, clippy::missing_errors_doc)]
+use informatics::{display_menu, run};
 use std::io::{self, Error};
-use informatics::{run, display_menu};
 
-fn main() -> Result<(), Error>{
+fn main() -> Result<(), Error> {
     loop {
         display_menu();
 
@@ -14,7 +14,7 @@ fn main() -> Result<(), Error>{
             Err(_) => panic!("numbers only"),
         };
         if choice == 0 {
-            break
+            break;
         }
         run(choice)?;
     }
