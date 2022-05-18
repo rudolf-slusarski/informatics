@@ -6,7 +6,7 @@
 ## algorithms
 
 - insertion sort
-- heapsort (not uploaded yet)
+- heapsort
 - quicksort
 - radix sort (not uploaded yet)
 - longest common subsequence
