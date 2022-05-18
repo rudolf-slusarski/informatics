@@ -1,6 +1,6 @@
 #![feature(is_sorted, box_syntax)]
 
-use algorithms::{huffman_encoding, longest_common_subsequence, quicksort, insertion_sort};
+use algorithms::{huffman_encoding, insertion_sort, longest_common_subsequence, quicksort};
 use std::io::Error;
 
 pub mod algorithms;

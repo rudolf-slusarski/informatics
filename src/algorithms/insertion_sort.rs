@@ -1,3 +1,4 @@
+use rand::{distributions::Uniform, Rng};
 use std::io::Error;
 
 fn insertion_sort(arr: &mut Vec<i32>) -> Vec<i32> {
@@ -12,8 +13,10 @@ fn insertion_sort(arr: &mut Vec<i32>) -> Vec<i32> {
 }
 
 pub fn run() -> Result<(), Error> {
-    let mut arr = vec![7162, 1325, 125, 1355, 656, 1341];
-    println!("{:?}", insertion_sort(&mut arr));
+    let range = Uniform::from(0..=1_000);
+    let mut random_25: Vec<i32> = rand::thread_rng().sample_iter(&range).take(25).collect();
+    println!("random: {:?}", random_25);
+    println!("sorted: {:?}", insertion_sort(&mut random_25));
     Ok(())
 }
 
