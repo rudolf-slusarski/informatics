@@ -14,4 +14,6 @@
 
 ## data structures
 
+- linked lists (not uploaded yet)
+- binary search trees
 - red-black trees (not uploaded yet)

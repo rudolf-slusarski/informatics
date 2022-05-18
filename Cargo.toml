@@ -6,7 +6,7 @@ license = "MIT"
 name = "informatics"
 readme = "README.md"
 repository = "https://github.com/rudolf-slusarski/informatics"
-version = "0.1.0"
+version = "0.1.5"
 
 [dependencies]
 bit-vec = "0.6.3"

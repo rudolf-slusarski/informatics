@@ -27,9 +27,11 @@ pub fn display_menu() {
     // println!("4 - radix sort");
     println!("5 - longest common subsequence");
     println!("6 - huffman encoding");
-
+    // println!();
     // println!("data structures:");
-    // println!("7 - red-black tree");
+    // println!("7 - linked list");
+    // println!("8 - binary search tree")
+    // println!("9 - red-black tree");
 
     println!("0 - that's enough");
 }
