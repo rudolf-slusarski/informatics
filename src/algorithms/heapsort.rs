@@ -35,10 +35,10 @@ fn heapify(a: &mut Vec<u32>, i: usize, heapsize: usize) {
 //     }
 // }
 
-fn build_heap(mut a: &mut Vec<u32>) {
+fn build_heap(a: &mut Vec<u32>) {
     let heapsize = a.len() - 1;
     for i in (0..a.len() / 2).rev() {
-        heapify(&mut a, i, heapsize)
+        heapify(a, i, heapsize)
     }
 }
 
