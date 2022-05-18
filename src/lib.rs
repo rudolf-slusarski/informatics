@@ -1,6 +1,6 @@
 #![feature(is_sorted, box_syntax)]
 
-use algorithms::{huffman_encoding, longest_common_subsequence, quicksort};
+use algorithms::{huffman_encoding, longest_common_subsequence, quicksort, insertion_sort};
 use std::io::Error;
 
 pub mod algorithms;
@@ -8,6 +8,7 @@ pub mod data_structures;
 
 pub fn run(choice: u32) -> Result<(), Error> {
     match choice {
+        1 => insertion_sort::run(),
         3 => quicksort::run(),
         5 => longest_common_subsequence::run(),
         6 => huffman_encoding::run(),

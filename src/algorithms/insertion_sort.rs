@@ -1,3 +1,5 @@
+use std::io::Error;
+
 fn insertion_sort(arr: &mut Vec<i32>) -> Vec<i32> {
     for i in 1..arr.len() {
         let mut j: usize = i;
@@ -9,11 +11,16 @@ fn insertion_sort(arr: &mut Vec<i32>) -> Vec<i32> {
     arr.to_vec()
 }
 
+pub fn run() -> Result<(), Error> {
+    let mut arr = vec![7162, 1325, 125, 1355, 656, 1341];
+    println!("{:?}", insertion_sort(&mut arr));
+    Ok(())
+}
+
 #[cfg(test)]
 mod tests {
-    use rand::{distributions::Uniform, Rng};
-
     use crate::algorithms::insertion_sort::insertion_sort;
+    use rand::{distributions::Uniform, Rng};
 
     #[test]
     fn insertion_sort_random_10_000() {
