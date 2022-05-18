@@ -1,6 +1,3 @@
-#![deny(clippy::pedantic)]
-#![allow(clippy::missing_panics_doc, clippy::missing_errors_doc)]
-
 use rand::{distributions::Uniform, Rng};
 use std::{
     io::Error,
@@ -82,13 +79,13 @@ mod tests {
     }
 
     #[test]
-    fn quicksort_random_250_000() {
+    fn quicksort_random_10_000() {
         let range = Uniform::from(0..=1_000_000);
-        let mut random_250_000: Vec<isize> = rand::thread_rng()
+        let mut random_10_000: Vec<isize> = rand::thread_rng()
             .sample_iter(&range)
-            .take(250_000)
+            .take(10_000)
             .collect();
-        assert!(quicksort(&mut random_250_000, 0, 249_999).is_sorted());
+        assert!(quicksort(&mut random_10_000, 0, 9_999).is_sorted());
     }
 
     #[test]

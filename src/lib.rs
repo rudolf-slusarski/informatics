@@ -1,9 +1,6 @@
-#![deny(clippy::pedantic)]
-#![allow(clippy::missing_panics_doc, clippy::missing_errors_doc)]
 #![feature(is_sorted, box_syntax)]
 
 use std::io::Error;
-
 use algorithms::{huffman_encoding, longest_common_subsequence, quicksort};
 
 pub mod algorithms;

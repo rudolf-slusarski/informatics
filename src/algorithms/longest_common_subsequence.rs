@@ -1,6 +1,3 @@
-#![deny(clippy::pedantic)]
-#![allow(clippy::missing_panics_doc, clippy::missing_errors_doc)]
-
 use colour::green;
 use std::{
     cmp,
