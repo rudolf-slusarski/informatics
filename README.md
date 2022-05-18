@@ -1,4 +1,7 @@
-# university of gdańsk, informatics (BA, 2022) excercises
+# university of gdańsk, informatics (BA, 2022) excercises in rust
+
+[![CI](https://github.com/rudolf-slusarski/informatics/actions/workflows/general.yml/badge.svg)](https://github.com/rudolf-slusarski/informatics/actions/workflows/general.yml)
+[![LICENSE](https://img.shields.io/github/license/rudolf-slusarski/informatics)](./LICENSE)
 
 ## algorithms
 
