@@ -21,7 +21,7 @@ pub fn run(choice: u32) -> Result<(), Error> {
 pub fn display_menu() {
     println!("algorithms:");
     println!("1 - insertion sort");
-    println!("2 - huffman");
+    println!("2 - heapsort");
     println!("3 - quicksort");
     println!("4 - radix sort");
     println!("5 - longest common subsequence");
