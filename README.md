@@ -1,6 +1,6 @@
-# algorithms and data structures
+# university of gdańsk, informatics (BA, 2022) excercises
 
-university of gdańsk, informatics (BA, 2022) excercises
+## algorithms and data structures (rust)
 
 - insertion sort (not uploaded yet)
 - heapsort (not uploaded yet)
@@ -9,3 +9,17 @@ university of gdańsk, informatics (BA, 2022) excercises
 - longest common subsequence
 - huffman encoding
 - red-black trees (not uploaded yet)
+
+## c
+
+## go
+
+## java
+
+## perl
+
+## python
+
+## sql
+
+## scripts
