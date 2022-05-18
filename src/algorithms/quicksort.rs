@@ -1,3 +1,4 @@
+#![allow(clippy::ptr_arg)]
 use rand::{distributions::Uniform, Rng};
 use std::{
     io::Error,

@@ -1,7 +1,7 @@
 #![feature(is_sorted, box_syntax)]
 
-use std::io::Error;
 use algorithms::{huffman_encoding, longest_common_subsequence, quicksort};
+use std::io::Error;
 
 pub mod algorithms;
 pub mod data_structures;
