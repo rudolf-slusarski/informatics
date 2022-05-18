@@ -115,6 +115,7 @@ pub fn run() -> Result<(), Error> {
         .read_line(&mut source_file)
         .expect("something went wrong");
     source_file.pop();
+    source_file = format!("../../{}", source_file);
 
     let total_time = Instant::now();
     let text = fs::read_to_string(&source_file)?;
@@ -124,7 +125,7 @@ pub fn run() -> Result<(), Error> {
         huffman_encoding(&text);
     println!("encoding time: {:?}", encoding_time.elapsed());
 
-    let file = File::create("encoded_file")?;
+    let file = File::create("../../encoded_file")?;
     let mut writer = BitWriter::endian(file, BigEndian);
     for c in text.chars() {
         for bit in codes.get(&c).unwrap().iter() {
@@ -138,7 +139,7 @@ pub fn run() -> Result<(), Error> {
         "compressed by {:?}%",
         compare_file_sizes(
             &File::open(source_file).unwrap(),
-            &File::open("encoded_file").unwrap()
+            &File::open("../../encoded_file").unwrap()
         )
         .unwrap()
     );
