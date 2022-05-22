@@ -1,5 +1,5 @@
 use std::{
-    cmp,
+    cmp::{self, Ordering},
     collections::{BTreeMap, BinaryHeap},
     fs::{self, File},
     io::{self, Error},
@@ -22,13 +22,13 @@ enum NodeKind {
 }
 
 impl Ord for Node {
-    fn cmp(&self, rhs: &Self) -> std::cmp::Ordering {
+    fn cmp(&self, rhs: &Self) -> Ordering {
         rhs.frequency.cmp(&self.frequency)
     }
 }
 
 impl PartialOrd for Node {
-    fn partial_cmp(&self, rhs: &Self) -> Option<std::cmp::Ordering> {
+    fn partial_cmp(&self, rhs: &Self) -> Option<Ordering> {
         Some(self.cmp(rhs))
     }
 }

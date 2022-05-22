@@ -11,9 +11,9 @@
 - radix sort (not uploaded yet)
 - longest common subsequence
 - huffman encoding
-
+<!-- 
 ## data structures
 
 - linked lists (not uploaded yet)
 - binary search trees
-- red-black trees (not uploaded yet)
+- red-black trees (not uploaded yet) -->
