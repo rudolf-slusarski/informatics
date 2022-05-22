@@ -4,7 +4,7 @@ use std::{
     io::{self, Error},
 };
 
-#[derive(Clone, Copy, PartialEq)]
+#[derive(Clone, Copy, PartialEq, Eq)]
 enum Arrow {
     Vertical,
     Horizontal,
